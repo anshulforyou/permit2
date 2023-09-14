@@ -1,1 +1,2 @@
 solmate/=lib/solmate
+safe-tools/=lib/safe-tools/src

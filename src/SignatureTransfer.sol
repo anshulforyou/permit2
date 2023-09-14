@@ -64,6 +64,7 @@ contract SignatureTransfer is ISignatureTransfer, EIP712 {
 
         signature.verify(_hashTypedData(dataHash), owner);
 
+        // require(1 < 0, "reverting here");
         ERC20(permit.permitted.token).safeTransferFrom(owner, transferDetails.to, requestedAmount);
     }
 
